@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalHealth &mdash; &Uuml;ber uns</title>
+    <meta name="description" content="Lerne das Team hinter LocalHealth kennen und erfahre, warum wir saisonale, lokale Ern&auml;hrung mit CO2-Daten verbinden.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-about">
+    <div class="nav-overlay" data-close-nav></div>
+    <header class="site-header" role="banner">
+        <div class="masthead">
+            <a href="index.html" class="logo" aria-label="LocalHealth Startseite">
+                <span class="logo-mark">local</span><span class="logo-rest">health</span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" data-toggle-nav>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="site-navigation" aria-label="Hauptnavigation">
+                <ul class="primary-nav" data-nav>
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="angebote.html">Angebote</a></li>
+                    <li><a class="nav-link is-active" href="ueberuns.html">&Uuml;ber uns</a></li>
+                    <li><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+                    <li class="nav-cta nav-cta--mobile">
+                        <button class="btn btn-ghost" type="button" data-open-auth="login">Login</button>
+                    </li>
+                </ul>
+            </nav>
+            <div class="masthead-actions">
+                <button class="btn btn-ghost" type="button" data-open-auth="login">Login</button>
+                <button class="btn btn-solid" type="button" data-open-auth="register">Mitmachen</button>
+                <button class="btn btn-ghost" type="button" id="logoutBtn" hidden>Logout</button>
+            </div>
+        </div>
+        <div class="hero hero--subpage">
+            <div class="hero-copy">
+                <span class="hero-badge">&Uuml;ber LocalHealth</span>
+                <h1>Wir verbinden Ern&auml;hrung, Daten und nachhaltige Lieferketten.</h1>
+                <p>LocalHealth entstand aus der Idee, leistungsorientierte Ern&auml;hrung mit den besten saisonalen Zutaten der Schweiz zu vereinen &mdash; und dabei jede CO2-Auswirkung transparent zu machen.</p>
+                <div class="hero-stats">
+                    <div class="stat-pill">
+                        <span class="stat-value">180+ Rezepte</span>
+                        <span class="stat-label">Saisonal kuratiert</span>
+                    </div>
+                    <div class="stat-pill">
+                        <span class="stat-value">Ecoinvent Partner</span>
+                        <span class="stat-label">Seit 2023 integriert</span>
+                    </div>
+                    <div class="stat-pill">
+                        <span class="stat-value">3 Regionen</span>
+                        <span class="stat-label">Z&uuml;rich, Basel, Romandie</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="content" role="main">
+        <section class="section section--soft" id="mission">
+            <div class="section-header">
+                <span class="section-kicker">Mission</span>
+                <h2>Seasonal Eating meets Science.</h2>
+                <p>Wir helfen Menschen, ihr Ern&auml;hrungsziel zu erreichen und gleichzeitig die Umweltbelastung zu reduzieren. Dazu kombinieren wir Lebensmittelwissen, Datenanalyse und Coaching-Erfahrung.</p>
+            </div>
+            <div class="cards-grid">
+                <article class="card">
+                    <h3>Saisonal &amp; lokal</h3>
+                    <p>Wir arbeiten mit Lieferketten, die innerhalb der Schweiz liegen. Jede Woche verifizieren wir Verf&uuml;gbarkeiten mit lokalen Partnern.</p>
+                </article>
+                <article class="card">
+                    <h3>Performance-orientiert</h3>
+                    <p>Unsere Meal-Pl&auml;ne basieren auf sportwissenschaftlichen Erkenntnissen, angepasst an Trainingszyklen und Regenerationsphasen.</p>
+                </article>
+                <article class="card">
+                    <h3>Transparent</h3>
+                    <p>Wir nutzen Ecoinvent als Datenbasis und zeigen CO2-Emissionen pro Mahlzeit &mdash; inklusive Handlungsempfehlungen zur Reduktion.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section--split" id="method">
+            <div class="section-content">
+                <span class="section-kicker">Methodik</span>
+                <h2>So entsteht jeder Meal-Plan.</h2>
+                <p>Unsere Ern&auml;hrungsberaterinnen, Datenspezialisten und Partnerbetriebe arbeiten Hand in Hand, um qualitative Daten in praktische Gerichte zu &uuml;bersetzen.</p>
+                <ul class="feature-list">
+                    <li>Analyse aktueller Saison-Kalender &amp; Verf&uuml;gbarkeiten</li>
+                    <li>Abgleich mit Ecoinvent-Emissionen pro Lebensmittel</li>
+                    <li>Makro-Optimierung in Zusammenarbeit mit Sport-Coaches</li>
+                    <li>User-Feedback-Loops nach jedem Meal-Plan Drop</li>
+                </ul>
+            </div>
+            <aside class="metrics-card" aria-label="Kennzahlen Methodik">
+                <div class="metric">
+                    <span class="metric-label">Datenpunkte</span>
+                    <span class="metric-value">5.200+</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Lokale Partner</span>
+                    <span class="metric-value">27 Betriebe</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Feedbackquote</span>
+                    <span class="metric-value">74%</span>
+                </div>
+                <p class="metric-footnote">Stand Januar 2025.</p>
+            </aside>
+        </section>
+
+        <section class="section section--soft" id="timeline">
+            <div class="section-header">
+                <span class="section-kicker">Timeline</span>
+                <h2>Unsere wichtigsten Meilensteine.</h2>
+            </div>
+            <div class="timeline">
+                <article class="timeline-item">
+                    <span class="timeline-meta">2022</span>
+                    <h3>Idee &amp; erster Prototyp</h3>
+                    <p>In Zumikon entsteht der erste Meal-Planner f&uuml;r Freundeskreis und Laufgruppen &mdash; noch als Google Sheet.</p>
+                </article>
+                <article class="timeline-item">
+                    <span class="timeline-meta">2023</span>
+                    <h3>Ecoinvent Integration</h3>
+                    <p>Wir integrieren Ecoinvent-Daten und erhalten Unterst&uuml;tzung von Impact-Hubs in Z&uuml;rich.</p>
+                </article>
+                <article class="timeline-item">
+                    <span class="timeline-meta">2024</span>
+                    <h3>Beta Launch</h3>
+                    <p>Erste Nutzerinnen aus Gyms und Firmen testen LocalHealth. Feedback flie&szlig;t direkt ins Produkt ein.</p>
+                </article>
+                <article class="timeline-item">
+                    <span class="timeline-meta">2025</span>
+                    <h3>Expansion &amp; Partnerschaften</h3>
+                    <p>Kooperationen mit Bauernh&ouml;fen, Bio-Lieferdiensten und Hochschulen erweitern Angebot und Datenbasis.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="team">
+            <div class="section-header">
+                <span class="section-kicker">Team</span>
+                <h2>Die Menschen hinter LocalHealth.</h2>
+            </div>
+            <div class="team-grid">
+                <article class="team-card">
+                    <h3>Yannick Meier</h3>
+                    <span class="team-role">Gr&uuml;nder &amp; CEO</span>
+                    <p>Ern&auml;hrungscoach, Food-Lover und Ideengeber von LocalHealth. Verantwortlich f&uuml;r Produkt und Partnerschaften. ETH Z&uuml;rich Absolvent (MSc Umweltingenieurwissenschaften) mit Fokus auf nachhaltige Lebensmittelsysteme.</p>
+                </article>
+                <article class="team-card">
+                    <h3>Lea Schmid</h3>
+                    <span class="team-role">Head of Nutrition</span>
+                    <p>Sportwissenschaftlerin mit Fokus auf periodisierte Ern&auml;hrungskonzepte f&uuml;r Ausdauer- und Kraftsport.</p>
+                </article>
+                <article class="team-card">
+                    <h3>Marco Steiner</h3>
+                    <span class="team-role">Lead Data &amp; Sustainability</span>
+                    <p>Datenspezialist mit Erfahrung in Life-Cycle-Assessments. Bindeglied zu Ecoinvent und unseren CO2-Modellen.</p>
+                </article>
+                <article class="team-card">
+                    <h3>Sophie Keller</h3>
+                    <span class="team-role">Partnerships</span>
+                    <p>Koordiniert Kooperationen mit Landwirtschaftsbetrieben, Bio-Lieferdiensten und regionalen M&auml;rkten.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section--cta" id="cta">
+            <div class="cta-card">
+                <h2>Wir suchen Mitgestalterinnen.</h2>
+                <p>Du hast Erfahrung in Ern&auml;hrungsberatung, Nachhaltigkeit oder Produktentwicklung? Schreibe uns und werde Teil der LocalHealth Journey.</p>
+                <div class="cta-actions">
+                    <a class="btn btn-ghost" href="kontakt.html">Kontakt aufnehmen</a>
+                    <button class="btn btn-solid" type="button" data-open-auth="register">Beta testen</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-grid">
+            <div>
+                <a href="index.html" class="logo logo--footer">
+                    <span class="logo-mark">local</span><span class="logo-rest">health</span>
+                </a>
+                <p class="footer-copy">Saisonale Rezepte, lokal bezogen und klimabewusst berechnet. F&uuml;r Menschen, die Trainingserfolge und Nachhaltigkeit verbinden wollen.</p>
+            </div>
+            <div>
+                <h3>Navigation</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="angebote.html">Angebote</a></li>
+                    <li><a href="ueberuns.html">&Uuml;ber uns</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Ressourcen</h3>
+                <ul class="footer-links">
+                    <li><a href="#" aria-disabled="true">Ecoinvent Integration (Coming Soon)</a></li>
+                    <li><a href="#" aria-disabled="true">API f&uuml;r Partner</a></li>
+                    <li><a href="#" aria-disabled="true">Pressekit</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Rechtliches</h3>
+                <ul class="footer-links">
+                    <li><a href="impressum.html">Impressum</a></li>
+                    <li><a href="datenschutz.html">Datenschutz</a></li>
+                    <li><a href="mailto:privacy@localhealth.ch">Datenschutz-Anfragen</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Kontakt</h3>
+                <ul class="footer-links">
+                    <li><a href="mailto:hallo@localhealth.ch">hallo@localhealth.ch</a></li>
+                    <li>Wiesenstrasse 12<br>8126 Zumikon</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-meta">
+            <span>&copy; 2025 LocalHealth. Alle Rechte vorbehalten.</span>
+            <a href="impressum.html">Impressum</a>
+            <a href="datenschutz.html">Datenschutz</a>
+        </div>
+    </footer>
+
+    <div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie-Hinweis" aria-hidden="true">
+        <div class="cookie-content">
+            <h2>Cookies f&uuml;r Performance &amp; Analyse</h2>
+            <p>Wir verwenden Cookies, um dein Erlebnis zu verbessern und anonyme Nutzungsdaten f&uuml;r unsere CO<sub>2</sub>-Optimierung zu sammeln. Details findest du in unserer <a href="datenschutz.html">Datenschutzerkl&auml;rung</a>. Du kannst diese Entscheidung jederzeit anpassen.</p>
+        </div>
+        <div class="cookie-actions">
+            <button class="btn btn-solid" type="button" id="acceptCookies">Akzeptieren</button>
+            <button class="btn btn-ghost" type="button" id="declineCookies">Ablehnen</button>
+        </div>
+    </div>
+
+    <div class="auth-modal" id="authModal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="auth-card">
+            <button class="auth-close" type="button" data-close-auth aria-label="Fenster schlie&szlig;en">&times;</button>
+            <div class="auth-header">
+                <h2 id="authTitle">Willkommen bei LocalHealth</h2>
+                <p id="authSubtitle">Melde dich an oder erstelle ein Konto, um deine saisonalen Meal-Plans zu speichern.</p>
+            </div>
+            <div class="auth-tabs" role="tablist">
+                <button class="auth-tab is-active" type="button" role="tab" aria-selected="true" data-auth-tab="login">Login</button>
+                <button class="auth-tab" type="button" role="tab" aria-selected="false" data-auth-tab="register">Registrieren</button>
+            </div>
+            <p class="auth-status" id="authStatus" aria-live="polite"></p>
+            <form id="loginForm" class="auth-form" autocomplete="on">
+                <label class="form-field">
+                    <span class="form-label">E-Mail</span>
+                    <input type="email" id="loginEmail" name="loginEmail" placeholder="du@beispiel.ch" required>
+                </label>
+                <label class="form-field">
+                    <span class="form-label">Passwort</span>
+                    <input type="password" id="loginPass" name="loginPass" placeholder="Passwort" required>
+                </label>
+                <button class="btn btn-solid btn-full" type="submit" id="loginBtn">Login</button>
+            </form>
+            <form id="registerForm" class="auth-form is-hidden" autocomplete="on">
+                <label class="form-field">
+                    <span class="form-label">E-Mail</span>
+                    <input type="email" id="regEmail" name="regEmail" placeholder="du@beispiel.ch" required>
+                </label>
+                <label class="form-field">
+                    <span class="form-label">Passwort</span>
+                    <input type="password" id="regPass" name="regPass" placeholder="Mindestens 8 Zeichen" minlength="8" required>
+                </label>
+                <button class="btn btn-solid btn-full" type="submit" id="registerBtn">Registrieren</button>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

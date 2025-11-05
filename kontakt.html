@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalHealth &mdash; Kontakt</title>
+    <meta name="description" content="Kontaktiere LocalHealth f&uuml;r Fragen zu saisonalen Meal-Pl&auml;nen, Beta-Zugang oder Partnerschaften.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-contact">
+    <div class="nav-overlay" data-close-nav></div>
+    <header class="site-header" role="banner">
+        <div class="masthead">
+            <a href="index.html" class="logo" aria-label="LocalHealth Startseite">
+                <span class="logo-mark">local</span><span class="logo-rest">health</span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" data-toggle-nav>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="site-navigation" aria-label="Hauptnavigation">
+                <ul class="primary-nav" data-nav>
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="angebote.html">Angebote</a></li>
+                    <li><a class="nav-link" href="ueberuns.html">&Uuml;ber uns</a></li>
+                    <li><a class="nav-link is-active" href="kontakt.html">Kontakt</a></li>
+                    <li class="nav-cta nav-cta--mobile">
+                        <button class="btn btn-ghost" type="button" data-open-auth="login">Login</button>
+                    </li>
+                </ul>
+            </nav>
+            <div class="masthead-actions">
+                <button class="btn btn-ghost" type="button" data-open-auth="login">Login</button>
+                <button class="btn btn-solid" type="button" data-open-auth="register">Mitmachen</button>
+                <button class="btn btn-ghost" type="button" id="logoutBtn" hidden>Logout</button>
+            </div>
+        </div>
+        <div class="hero hero--subpage">
+            <div class="hero-copy">
+                <span class="hero-badge">Kontakt</span>
+                <h1>Wir freuen uns auf deinen Input.</h1>
+                <p>Ob Feedback aus der Beta, Interesse an einer Kooperation oder Fragen zur CO2-Bilanz deiner Rezepte &mdash; schreib uns, und wir melden uns innerhalb eines Werktages.</p>
+                <div class="hero-stats">
+                    <div class="stat-pill">
+                        <span class="stat-value">&lt; 24h</span>
+                        <span class="stat-label">Antwortzeit</span>
+                    </div>
+                    <div class="stat-pill">
+                        <span class="stat-value">Mo &ndash; Fr</span>
+                        <span class="stat-label">08:00 &ndash; 18:00 Uhr</span>
+                    </div>
+                    <div class="stat-pill">
+                        <span class="stat-value">2 Sprachen</span>
+                        <span class="stat-label">Deutsch &amp; Englisch</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="content" role="main">
+        <section class="section section--soft" id="contact">
+            <div class="section-header">
+                <span class="section-kicker">Kontaktformular</span>
+                <h2>Erz&auml;hl uns von deinem Projekt.</h2>
+                <p>Nutze das Formular f&uuml;r allgemeine Fragen, Beta-Anfragen oder Medienkontakte. Wir stimmen das n&auml;chste Gespr&auml;ch individuell ab.</p>
+            </div>
+            <div class="contact-grid">
+                <form class="contact-card" id="contactForm" autocomplete="on">
+                    <label class="form-field">
+                        <span class="form-label">Name</span>
+                        <input type="text" name="name" placeholder="Dein Name" required>
+                    </label>
+                    <label class="form-field">
+                        <span class="form-label">E-Mail</span>
+                        <input type="email" name="email" placeholder="du@beispiel.ch" required>
+                    </label>
+                    <label class="form-field">
+                        <span class="form-label">Thema</span>
+                        <select name="topic" required>
+                            <option value="">Bitte ausw&auml;hlen</option>
+                            <option value="beta">Beta-Zugang</option>
+                            <option value="partnership">Partnerschaft</option>
+                            <option value="press">Presse</option>
+                            <option value="support">Support</option>
+                        </select>
+                    </label>
+                    <label class="form-field">
+                        <span class="form-label">Nachricht</span>
+                        <textarea name="message" placeholder="Wie k&ouml;nnen wir helfen?" required></textarea>
+                    </label>
+                    <div class="form-actions">
+                        <button class="btn btn-solid" type="submit">Nachricht senden</button>
+                    </div>
+                </form>
+                <div class="contact-card">
+                    <h3>Direkter Kontakt</h3>
+                    <p>LocalHealth GmbH<br>Zumikon, Schweiz</p>
+                    <p><strong>E-Mail:</strong> <a href="mailto:hallo@localhealth.ch">hallo@localhealth.ch</a></p>
+                    <p><strong>Telefon:</strong> +41 44 000 00 00 (Beta)</p>
+                    <p><strong>Beta-Feedback:</strong> feedback@localhealth.ch</p>
+                    <div class="map-placeholder">LocalHealth Space<br>Wiesenstrasse 12<br>8126 Zumikon</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--split" id="availability">
+            <div class="section-content">
+                <span class="section-kicker">Sprechzeiten</span>
+                <h2>So erreichst du uns live.</h2>
+                <ul class="feature-list">
+                    <li>Beta-Check-in: Mittwoch 12:30 &ndash; 13:00 Uhr (Online)</li>
+                    <li>Open Office Hours: Freitag 16:00 &ndash; 17:00 Uhr (Zumikon)</li>
+                    <li>Coach-Sprechstunde: Nach Vereinbarung, 30 Minuten</li>
+                </ul>
+            </div>
+            <aside class="metrics-card" aria-label="Community Status">
+                <div class="metric">
+                    <span class="metric-label">Aktive Beta</span>
+                    <span class="metric-value">120 Personen</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Coaches</span>
+                    <span class="metric-value">18 Partner</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Antwortquote</span>
+                    <span class="metric-value">97%</span>
+                </div>
+                <p class="metric-footnote">Aktualisiert Februar 2025.</p>
+            </aside>
+        </section>
+
+        <section class="section section--soft" id="faq">
+            <div class="section-header">
+                <span class="section-kicker">FAQ</span>
+                <h2>H&auml;ufige Fragen.</h2>
+            </div>
+            <div class="cards-grid">
+                <article class="card">
+                    <h3>Wie funktioniert der Beta-Zugang?</h3>
+                    <p>Registriere dich &uuml;ber die Beta-Formulare. Wir schalten dein Konto frei und senden dir w&ouml;chentliche Updates.</p>
+                </article>
+                <article class="card">
+                    <h3>Kann ich eigene Rezepte einreichen?</h3>
+                    <p>Ja, wir pr&uuml;fen Rezepte auf Saisonalit&auml;t, Makro-Profil und CO2-Bilanz. Schicke sie direkt an <a href="mailto:recipes@localhealth.ch">recipes@localhealth.ch</a>.</p>
+                </article>
+                <article class="card">
+                    <h3>Bietet ihr Firmenprogramme an?</h3>
+                    <p>Unsere Pro Pakete sind f&uuml;r Teams bis 25 Personen ausgelegt. Auf Anfrage erstellen wir individuelle Konzepte.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section--cta" id="cta">
+            <div class="cta-card">
+                <h2>Jetzt Gespr&auml;ch vereinbaren.</h2>
+                <p>Buche einen Termin und erfahre, wie LocalHealth deine Ern&auml;hrung saisonal, nachhaltig und leistungsf&auml;hig macht.</p>
+                <div class="cta-actions">
+                    <a class="btn btn-ghost" href="mailto:hallo@localhealth.ch">Termin per E-Mail</a>
+                    <button class="btn btn-solid" type="button" data-open-auth="register">Beta-Mitglied werden</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-grid">
+            <div>
+                <a href="index.html" class="logo logo--footer">
+                    <span class="logo-mark">local</span><span class="logo-rest">health</span>
+                </a>
+                <p class="footer-copy">Saisonale Rezepte, lokal bezogen und klimabewusst berechnet. F&uuml;r Menschen, die Trainingserfolge und Nachhaltigkeit verbinden wollen.</p>
+            </div>
+            <div>
+                <h3>Navigation</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="angebote.html">Angebote</a></li>
+                    <li><a href="ueberuns.html">&Uuml;ber uns</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Ressourcen</h3>
+                <ul class="footer-links">
+                    <li><a href="#" aria-disabled="true">Ecoinvent Integration (Coming Soon)</a></li>
+                    <li><a href="#" aria-disabled="true">API f&uuml;r Partner</a></li>
+                    <li><a href="#" aria-disabled="true">Pressekit</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Rechtliches</h3>
+                <ul class="footer-links">
+                    <li><a href="impressum.html">Impressum</a></li>
+                    <li><a href="datenschutz.html">Datenschutz</a></li>
+                    <li><a href="mailto:privacy@localhealth.ch">Datenschutz-Anfragen</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Kontakt</h3>
+                <ul class="footer-links">
+                    <li><a href="mailto:hallo@localhealth.ch">hallo@localhealth.ch</a></li>
+                    <li>Wiesenstrasse 12<br>8126 Zumikon</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-meta">
+            <span>&copy; 2025 LocalHealth. Alle Rechte vorbehalten.</span>
+            <a href="impressum.html">Impressum</a>
+            <a href="datenschutz.html">Datenschutz</a>
+        </div>
+    </footer>
+
+    <div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie-Hinweis" aria-hidden="true">
+        <div class="cookie-content">
+            <h2>Cookies f&uuml;r Performance &amp; Analyse</h2>
+            <p>Wir verwenden Cookies, um dein Erlebnis zu verbessern und anonyme Nutzungsdaten f&uuml;r unsere CO<sub>2</sub>-Optimierung zu sammeln. Details findest du in unserer <a href="datenschutz.html">Datenschutzerkl&auml;rung</a>. Du kannst diese Entscheidung jederzeit anpassen.</p>
+        </div>
+        <div class="cookie-actions">
+            <button class="btn btn-solid" type="button" id="acceptCookies">Akzeptieren</button>
+            <button class="btn btn-ghost" type="button" id="declineCookies">Ablehnen</button>
+        </div>
+    </div>
+
+    <div class="auth-modal" id="authModal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="auth-card">
+            <button class="auth-close" type="button" data-close-auth aria-label="Fenster schlie&szlig;en">&times;</button>
+            <div class="auth-header">
+                <h2 id="authTitle">Willkommen bei LocalHealth</h2>
+                <p id="authSubtitle">Melde dich an oder erstelle ein Konto, um deine saisonalen Meal-Plans zu speichern.</p>
+            </div>
+            <div class="auth-tabs" role="tablist">
+                <button class="auth-tab is-active" type="button" role="tab" aria-selected="true" data-auth-tab="login">Login</button>
+                <button class="auth-tab" type="button" role="tab" aria-selected="false" data-auth-tab="register">Registrieren</button>
+            </div>
+            <p class="auth-status" id="authStatus" aria-live="polite"></p>
+            <form id="loginForm" class="auth-form" autocomplete="on">
+                <label class="form-field">
+                    <span class="form-label">E-Mail</span>
+                    <input type="email" id="loginEmail" name="loginEmail" placeholder="du@beispiel.ch" required>
+                </label>
+                <label class="form-field">
+                    <span class="form-label">Passwort</span>
+                    <input type="password" id="loginPass" name="loginPass" placeholder="Passwort" required>
+                </label>
+                <button class="btn btn-solid btn-full" type="submit" id="loginBtn">Login</button>
+            </form>
+            <form id="registerForm" class="auth-form is-hidden" autocomplete="on">
+                <label class="form-field">
+                    <span class="form-label">E-Mail</span>
+                    <input type="email" id="regEmail" name="regEmail" placeholder="du@beispiel.ch" required>
+                </label>
+                <label class="form-field">
+                    <span class="form-label">Passwort</span>
+                    <input type="password" id="regPass" name="regPass" placeholder="Mindestens 8 Zeichen" minlength="8" required>
+                </label>
+                <button class="btn btn-solid btn-full" type="submit" id="registerBtn">Registrieren</button>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
