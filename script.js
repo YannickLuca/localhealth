@@ -1875,6 +1875,25 @@ function getEcoMeterWidth(carbonKg) {
   return score;
 }
 
+function getCarbonImpactLabel(carbonKg) {
+  if (!Number.isFinite(carbonKg)) {
+    return '';
+  }
+  if (carbonKg <= 1.3) {
+    return 'Sehr niedriger CO<sub>2</sub>-Fussabdruck';
+  }
+  if (carbonKg <= 1.8) {
+    return 'Niedriger CO<sub>2</sub>-Fussabdruck';
+  }
+  if (carbonKg <= 2.3) {
+    return 'Moderater CO<sub>2</sub>-Fussabdruck';
+  }
+  if (carbonKg <= 2.8) {
+    return 'Erh&ouml;hter CO<sub>2</sub>-Fussabdruck';
+  }
+  return 'Hoher CO<sub>2</sub>-Fussabdruck';
+}
+
 function formatPrice(value) {
   if (!Number.isFinite(value)) {
     return null;
@@ -1970,36 +1989,50 @@ function buildMealMarkup(meal, selection) {
     ? formatPrice(meal.pricePerPortion)
     : meal.pricePerPortion || null;
   const priceMarkup = priceText
-    ? `<p class="meal-price"><span>Preis pro Portion</span><strong>${priceText}</strong></p>`
+    ? `<p class="meal-price meal-price--compact"><span>Preis pro Portion</span><strong>${priceText}</strong></p>`
     : '';
   const productsMarkup = renderProductList(meal.products);
+  const carbonImpactLabel = getCarbonImpactLabel(typeof meal.carbon === 'number' ? meal.carbon : NaN);
+  const footprintMarkup = `
+    <div class="footprint-pill" role="group" aria-label="CO<sub>2</sub>-Emissionen je Portion">
+      <span class="footprint-pill__label">CO<sub>2</sub>e je Portion</span>
+      <span class="footprint-pill__value">${carbonValue} kg</span>
+      ${carbonImpactLabel ? `<span class="footprint-pill__hint">${carbonImpactLabel}</span>` : ''}
+    </div>
+  `;
   return `
     <article class="planner-result">
       <header class="planner-result-header">
-        <div>
+        <div class="planner-result-heading">
           <h3>${meal.name}</h3>
-          <p class="eco-score-detail">${ecoScore.description}</p>
+          <div class="planner-result-tags">
+            <span class="badge badge--season">${seasonLabels[meal.season] ?? meal.season}</span>
+            <span class="badge">${goalLabels[meal.goal] ?? meal.goal}</span>
+          </div>
         </div>
-        <div class="planner-result-tags">
-          <span class="badge badge--season">${seasonLabels[meal.season] ?? meal.season}</span>
-          <span class="badge">${goalLabels[meal.goal] ?? meal.goal}</span>
-          <span class="badge badge--co2">${carbonValue} kg CO<sub>2</sub>e</span>
+        <div class="planner-result-meta">
+          ${footprintMarkup}
           ${ecoScore.label === '&ndash;' ? '' : ecoBadgeMarkup}
         </div>
       </header>
-      <p>${meal.description}</p>
-      <ul class="macro-list">
-        <li><strong>${meal.macros.kcal}</strong> kcal</li>
-        <li><strong>${meal.macros.protein}</strong> g Protein</li>
-        <li><strong>${meal.macros.carbs}</strong> g Kohlenhydrate</li>
-        <li><strong>${meal.macros.fat}</strong> g Fett</li>
-      </ul>
-      ${priceMarkup}
-      ${productsMarkup}
+      <div class="planner-result-impact">
+        ${ecoMeterMarkup}
+        <p class="eco-score-detail">${ecoScore.description}</p>
+      </div>
+      <p class="planner-result-summary">${meal.description}</p>
+      <div class="planner-result-body">
+        <ul class="macro-list macro-list--compact">
+          <li><strong>${meal.macros.kcal}</strong> kcal</li>
+          <li><strong>${meal.macros.protein}</strong> g Protein</li>
+          <li><strong>${meal.macros.carbs}</strong> g Kohlenhydrate</li>
+          <li><strong>${meal.macros.fat}</strong> g Fett</li>
+        </ul>
+        ${priceMarkup}
+      </div>
       ${tagsMarkup}
+      ${productsMarkup}
       ${storeSuggestionMarkup}
       ${shopNoteMarkup}
-      ${ecoMeterMarkup}
       <p class="co2-source">${meal.co2Source}</p>
     </article>
   `;
